@@ -6,7 +6,7 @@ body {
 
 header {
     height: 95vh;
-    clip-path:  polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
 .view1 {
@@ -91,7 +91,7 @@ header {
 
 * {
     box-sizing: border-box;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 a,
@@ -142,6 +142,7 @@ a:active {
 .outer-menu .checkbox-toggle:checked~.menu>div {
     transform: scale(1);
     transition-duration: .75s;
+    z-index: 5;
 }
 
 .outer-menu .checkbox-toggle:checked~.menu>div>div {
@@ -286,4 +287,95 @@ a:active {
 
 span {
     padding-right: 1rem;
+}
+
+.exciting {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    background: -webkit-linear-gradient(#7ed56f, #28b485);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 3rem;
+    transition: all .2s
+}
+
+.exciting:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.row>* {
+    flex: 1;
+}
+
+h3 {
+    font-weight: 700;
+    color: #777;
+}
+
+.para {
+    color: #777;
+}
+
+.right2 {
+    position: relative;
+    padding-left: 10rem;
+}
+
+.pic {
+    position: absolute;
+    z-index: 0 !important;
+    transform: scale(0.95);
+    outline-offset: 1rem;
+    transition: all 0.3s ease;
+}
+
+.pic:hover {
+    outline: 0.7rem solid #55c57a;
+    transform: scale(1.05) translateY(-0.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+    z-index: 20
+}
+
+.pic1 {
+    z-index: auto;
+}
+
+.pic2 {
+    z-index: 2;
+    left: 26rem;
+    top: 2rem;
+}
+
+.pic3 {
+    z-index: 3;
+    left: 18rem;
+    top: 8rem;
+}
+
+.left2 {
+    padding-left: 8rem;
+    padding-right: 0;
+}
+
+.learn {
+    color: #55c57a;
+}
+
+.l-more {
+    border-bottom: 1px solid #55c57a;
+}
+
+.l-more:hover {
+    background-color: #55c57a;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px)
 }
